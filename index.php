@@ -77,7 +77,7 @@ $endyear = $startyear + 21;
 
         <footer>
             <p>Ghetto Fabulous V1.2 - Now with more correctness and less eye bleeding!</p>
-            <p>&copy; 2014 <a href="http://ajfite.com">A.J. Fite</a> (OPEN SOURCE COMING SOON) -- <a href="LICENSE.html">License</a></p>
+            <p>&copy; 2014 <a href="http://ajfite.com">A.J. Fite</a> -- <a href="https://github.com/Goldman60/RotationCalculator">Open Source on GitHub</a> -- <a href="LICENSE.html">License</a></p>
         </footer>
 </body>
 </html>
