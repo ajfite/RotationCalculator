@@ -1,0 +1,27 @@
+/*
+ Copyright 2014 A.J. Fite
+ Please see the license file for more information.
+*/
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border: 1px solid #cccccc;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+thead {
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid #cccccc;
+    width:120px;
+}
+
+footer {
+    font-size: 10px;
+    color: #999999;
+}
