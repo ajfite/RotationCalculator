@@ -1,3 +1,7 @@
+# Changes in the Rotation system
+
+Due to changes in Cal Poly's rotation system beginning Summer 2015, this branch of the rotation calculator is no longer being developed or maintained as of 11/6/2014.  A new calculator will be developed if possible.
+
 # About
 
 A calculator to find your rotation at Cal Poly in the future.

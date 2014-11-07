@@ -36,6 +36,8 @@ $endyear = $startyear + 21;
     </head>
     <body>
         <header><h1>Cal Poly Rotation Schedule</h1></header>
+		
+		<div id="rotwarn">*** <a href="http://registrar.calpoly.edu/Registration/FAQ">THE ROTATION SYSTEM IS CHANGING BEGINNING SUMMER 2015</a>, THIS CALCULATOR DOES NOT ACCOUNT FOR THESE CHANGES AT THIS TIME ***</div>
 
         <form id="info" method="get" action="index.php">
             <input type="text" placeholder="Last Name" id="lastname" name="lastname" />
@@ -57,16 +59,16 @@ $endyear = $startyear + 21;
                         </tr>
                     </thead>
                 <?php for($year = $startyear; $year <= $endyear; $year++): ?>
-                    <tr id="<?php echo $year; ?>">
+                    <tr <?php if($year > 2015) { echo "class=\"null\""; } ?> id="<?php echo $year; ?>">
                         <td><?php echo $year; ?></td>
                     <?php for($quarter = 0; $quarter < 3; $quarter++): 
                             $rot = new rotation($year, $quarter, $name->getNameval()); 
                             ?>
                             
-                            <td><?php echo $rot->getval(); ?></td>
+                            <td <?php if($year == 2015 && $quarter==2) { echo "class=\"null\""; } ?>><?php echo $rot->getval(); ?></td>
                         <?php //endif; 
                         endfor; ?>
-                            <td>Coming soon</td>
+                            <td <?php if($year == 2015) { echo "class=\"null\""; } ?>>Coming soon</td>
                     </tr>
                 <?php endfor; ?>
                 </table>

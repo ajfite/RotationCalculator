@@ -12,6 +12,16 @@ table {
     border-collapse: collapse;
 }
 
+#rotwarn {
+	color:red;
+	margin-bottom: 10px;
+	font-weight:bold;
+}
+
+.null {
+	background-color:black;
+}
+
 thead {
     font-weight: bold;
 }
